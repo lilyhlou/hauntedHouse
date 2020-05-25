@@ -1,0 +1,49 @@
+body{
+  background-image: url("images/room1.gif");
+  background-size: 1366px 853px;
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-color: black;
+
+}
+
+
+p{
+  color: red;
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 48px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+p:nth-child(2){
+
+  animation: type2 8s steps(60, end);
+}
+
+p a{
+
+  color: red;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}

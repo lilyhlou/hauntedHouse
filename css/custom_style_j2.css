@@ -1,0 +1,64 @@
+.surround {
+	width: 90%;
+	margin: 30px auto;
+}
+
+.description {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ccc;
+	text-align: center;
+}
+
+.tower {
+	display: inline-block;
+}
+
+.kk#animation {
+	position:absolute;
+	left:-5%; /* Set initial position for each image off-screen left -- adjust according to image width */
+	animation:mymove 8s infinite;	/* total animation time for each image is 8 seconds, loops forever */
+	animation-direction:normal;	
+	/* Firefox */
+	-moz-animation:mymove 8s infinite;
+	-moz-animation-direction:normal;		
+	/* Safari, Chrome, and Webkit Opera */
+	-webkit-animation:mymove 8s infinite;
+	-webkit-animation-direction:normal;	
+	/* Presto Opera */
+	-o-animation:mymove 8s infinite;
+	-o-animation-direction:normal;
+}
+
+/* Animation start and stop points */
+@keyframes mymove
+{
+	from {left:-5%;}	/*off-screen left (adjust for image width)*/
+	to {left:100%;}		/*off-screen right*/
+}
+
+@-moz-keyframes mymove /* Firefox */
+{
+	from {left:-5%;}
+	to {left:100%;}
+}
+
+@-webkit-keyframes mymove /* Safari, Chrome, and Webkit Opera */
+{
+	from {left:-5%;}
+	to {left:100%;}
+}
+
+@-o-keyframes mymove /* Presto Opera */
+{
+	from {left:-5%;}
+	to {left:100%;}
+}
+
+/*
+.youtube-video {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}*/
